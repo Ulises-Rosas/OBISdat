@@ -10,12 +10,19 @@ Software requierements:
 
 #### Installation
 
-By the moment, there's no need of further steps to install OBISdat. You can just download this repository, unzip it and move into main directory in order to get access to executables. 
+Upon downloading this repository, unzip it and move into `OBISdat` directory, run the following to install excutables:
+
+```Shell
+python3 setup.py install
+```
 
 Using `git`:
 
-1. clone it: `git clone https://github.com/Ulises-Rosas/OBISdat.git`
-2. move into:  `cd OBISdat`
+```Shell
+git clone https://github.com/Ulises-Rosas/OBISdat.git
+cd OBISdat
+python3 setup.py install
+```
 
 
 The structure is 
