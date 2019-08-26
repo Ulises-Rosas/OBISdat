@@ -17,6 +17,39 @@ Using `git`:
 1. clone it: `git clone https://github.com/Ulises-Rosas/OBISdat.git`
 2. move into:  `cd OBISdat`
 
+
+
+
+### Country
+
+
+Example:
+
+```Shell
+./src/obis.py country --of Peru Colombia
+```
+```
+id      country code
+169     Peru    PE
+48      Colombia        CO
+```
+
+### Institute
+
+
+Example:
+
+```Shell
+./src/obis.py institute --of 'Smithsonian Institution'
+```
+```
+id	name	parent	children	records
+7553	National Museum of Natural History, Smithsonian Institution	{'id': 17611, 'name': 'Smithsonian Institution'}	None	638317
+19436	Tennenbaum Marine Observatories Network	{'id': 17611, 'name': 'Smithsonian Institution'}	None	1135
+17611	Smithsonian Institution	None	[{'id': 19436, 'name': 'Tennenbaum Marine Observatories Network'}, {'id': 7553, 'name': 'National Museum of Natural History, Smithsonian Institution'}]	1056
+```
+
+
 ### Area
 
 Example
@@ -30,18 +63,6 @@ id      name    type
 10199   PeruvianHCSUpwelling    ebsa
 41      Colombia        obis
 127     Joint Regime: Colombia - Jamaica        obis
-```
-### Country
-
-Example
-
-```Shell
-./src/obis.py country --of Peru Colombia
-```
-```
-id      country code
-169     Peru    PE
-48      Colombia        CO
 ```
 
 ### Checklist
