@@ -10,7 +10,7 @@ Software requierements:
 
 #### Installation
 
-By the moment, there's no need of further steps to install WoRMStools. You can just download this repository, unzip it and move into main directory in order to get access to executables. 
+By the moment, there's no need of further steps to install OBISdat. You can just download this repository, unzip it and move into main directory in order to get access to executables. 
 
 Using `git`:
 
