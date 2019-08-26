@@ -80,9 +80,7 @@ class Obis:
 
     def dataRetriever(self):
         notsizePath = "|".join([ "^%s$" % i for i in self.notsizePath ])
-        # self = Obis({'size': 30, 'scientificname': ['Reptilia', 'Mammalia']}, 'are')
-        # self = Obis({'scientificname': ['Reptilia', 'Mammalia'], 'areaid': '190', 'size': 5000}, 'checklist')
-        # size = 30
+
         page    = 1
         headers = self.header
         out     = []
@@ -105,8 +103,7 @@ class Obis:
         return out
 
     def geographics(self, of):
-        # self = Obis({'size': 30}, 'area')
-        # of = ['Peru', 'Colombia']
+
         dat = self.dataRetriever()
         if of is None:
             return dat
