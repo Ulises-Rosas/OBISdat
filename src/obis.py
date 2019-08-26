@@ -21,6 +21,8 @@ def getOpt():
                         default=None)
     parser.add_argument('--areaid', metavar="<query parameter>",
                         default=None)
+    parser.add_argument('--id', metavar="<query parameter>",
+                        default=None)
     parser.add_argument('--taxonid', metavar="<query parameter>",
                         default=None)
     parser.add_argument('--datasetid', metavar="<query parameter>",
@@ -61,7 +63,8 @@ class Obis:
         ## so far
         self.notsizePath = [
             'area',
-            'country'
+            'country',
+            'institute'
         ]
 
     @property
@@ -72,7 +75,7 @@ class Obis:
         out  = []
         if taxa is not None:
             for i in taxa:
-                opts['scientificname'] = i
+                opts['scientificname'] = i.replace(" ", "%20")
                 out.append( mh(opts) )
         else:
             out.append( mh(opts) )
@@ -118,7 +121,7 @@ class Obis:
 
 def cname(s,ty):
 
-    tail = "obis_%s.tsv" % ty
+    tail = "obis_%s.tsv" % ty.replace("/", "_")
     fo   = "%s_%s" % (s, tail) if s != "input_based" else tail
     return fo
 
@@ -149,7 +152,7 @@ def main():
 
     Obj = Obis(query, args.path)
 
-    if re.findall("(country|area)", args.path):
+    if re.findall("(country|area|institute)", args.path):
         out = Obj.geographics(args.of)
     else:
         out = Obj.dataRetriever()
