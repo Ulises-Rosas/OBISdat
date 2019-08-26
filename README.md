@@ -28,7 +28,7 @@ python3 setup.py install
 The structure is 
 
 ```Shell
-./src/obis.py [path] [parameters]
+obis.py [path] [parameters]
 ```
 
 This excutable uses paths that avilable for its 
@@ -50,7 +50,7 @@ Here are some examples:
 Example:
 
 ```Shell
-./src/obis.py country --of Peru Colombia
+obis.py country --of Peru Colombia
 ```
 ```
 id      country code
@@ -64,7 +64,7 @@ id      country code
 Example:
 
 ```Shell
-./src/obis.py institute --of 'Smithsonian Institution'
+obis.py institute --of 'Smithsonian Institution'
 ```
 ```
 id	name	parent	children	records
@@ -78,7 +78,7 @@ id	name	parent	children	records
 
 Example:
 ```Shell
-./src/obis.py area --of Peru Colombia
+obis.py area --of Peru Colombia
 ```
 ```
 id      name    type
@@ -93,7 +93,7 @@ id      name    type
 
 Example:
 ```Shell
-./src/obis.py checklist --areaid 190 --taxa Reptilia Mammalia
+obis.py checklist --areaid 190 --taxa Reptilia Mammalia
 ```
 ```
 scientificName	scientificNameAuthorship	taxonID	taxonRank	taxonomicStatus	acceptedNameUsage	acceptedNameUsageID	is_marine	kingdom	phylum	subphylum	superclass	class	order	suborder	superfamily	family	genus	species	kingdomid	phylumid	subphylumid	superclassid	classid	orderid	suborderid	superfamilyid	familyid	genusid	speciesid	category	records
