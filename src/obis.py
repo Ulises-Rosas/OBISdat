@@ -13,15 +13,13 @@ def getOpt():
                         default="checklist",
                         help='path for host.................[default = checklist]')
     parser.add_argument('--taxa', nargs='+',
-                        metavar="<query parameter>",
+                        metavar="<taxa>",
                         default=None)
     parser.add_argument('--of', nargs='+',
                         metavar="",
                         help="Coupled with country and area path",
                         default=None)
     parser.add_argument('--areaid', metavar="<query parameter>",
-                        default=None)
-    parser.add_argument('--id', metavar="<query parameter>",
                         default=None)
     parser.add_argument('--taxonid', metavar="<query parameter>",
                         default=None)
