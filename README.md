@@ -10,7 +10,7 @@ Software requierements:
 
 #### Installation
 
-Upon downloading this repository, unzip it and move into `OBISdat` directory, run the following to install excutables:
+Upon downloading this repository, unzip it and move into `OBISdat` directory, then run the following to install excutables:
 
 ```Shell
 python3 setup.py install
@@ -24,7 +24,7 @@ cd OBISdat
 python3 setup.py install
 ```
 
-
+### Usage
 The structure is 
 
 ```Shell
@@ -45,7 +45,7 @@ Which can be
 
 Here are some examples:
 
-### Country
+#### Country
 
 Example:
 
@@ -58,7 +58,7 @@ id      country code
 48      Colombia        CO
 ```
 
-### Institute
+#### Institute
 
 
 Example:
@@ -74,7 +74,7 @@ id	name	parent	children	records
 ```
 
 
-### Area
+#### Area
 
 Example:
 ```Shell
@@ -89,10 +89,7 @@ id      name    type
 127     Joint Regime: Colombia - Jamaica        obis
 ```
 
-### Checklist
-
-
-
+#### Checklist
 
 Example:
 ```Shell
