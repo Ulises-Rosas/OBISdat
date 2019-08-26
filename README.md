@@ -18,10 +18,27 @@ Using `git`:
 2. move into:  `cd OBISdat`
 
 
+The structure is 
 
+```Shell
+./src/obis.py [path] [parameters]
+```
+
+This excutable uses paths that avilable for its 
+
+* country
+* area
+* institute
+* checklist
+* checklist/redlist
+* checklist/newest
+
+Which can be 
+
+
+Here are some examples:
 
 ### Country
-
 
 Example:
 
@@ -52,7 +69,7 @@ id	name	parent	children	records
 
 ### Area
 
-Example
+Example:
 ```Shell
 ./src/obis.py area --of Peru Colombia
 ```
@@ -67,8 +84,10 @@ id      name    type
 
 ### Checklist
 
-Example
 
+
+
+Example:
 ```Shell
 ./src/obis.py checklist --areaid 190 --taxa Reptilia Mammalia
 ```
