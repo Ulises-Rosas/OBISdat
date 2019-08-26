@@ -25,13 +25,14 @@ python3 setup.py install
 ```
 
 ### Usage
-The structure is 
+
+The way this executable is used match up this structure:
 
 ```Shell
 obis.py [path] [parameters]
 ```
 
-This excutable uses paths that avilable for its 
+Paths that [OBIS API](https://api.obis.org) accepts are stated at `[path]` position. It has been tested the following paths so far:
 
 * country
 * area
@@ -40,10 +41,22 @@ This excutable uses paths that avilable for its
 * checklist/redlist
 * checklist/newest
 
-Which can be 
+Each path outcomes can be modified by adding constraining parameters at `[parameters]` position. Paramenters available are:
 
+* `--taxa` (e.g. `Elasmobranchii`)
+* `--of` (e.g. `Peru Colombia`)
+* `--areaid` 
+* `--datasetid`
+* `--instituteid`
+* `--nodeid`
+* `--startdate`
+* `--enddate`
+* `--startdepth`
+* `--enddepth`
+* `--geometry`
+* `--size`
+* `--out` (output name)
 
-Here are some examples:
 
 #### Country
 
