@@ -80,7 +80,7 @@ class Obis:
         return out
 
     def dataRetriever(self):
-        notsizePath = "|".join([ "^%s$" % i for i in self.notsizePath ])
+        # notsizePath = "|".join([ "^%s$" % i for i in self.notsizePath ])
 
         page    = 1
         headers = self.header
@@ -89,18 +89,22 @@ class Obis:
         for head in headers:
             skip = 0
             while True:
-                if page == 2 and re.findall(notsizePath, self.path):
-                    break
-                complete_url = "%s/%s?%s&skip=%s" % (self.host, self.path, head, skip)
+                complete_url = "%s/%s?%s&after=%s" % (self.host, self.path, head, skip)
                 results      = json.load(urllib.request.urlopen(complete_url))['results']
-                if results.__len__() == 0:
+
+                if len(results) == 0:
                     break
                 if page == 1:
                     out.append( "\t".join(["%s" % i for i in results[0].keys()]) )
                     page += 1
                 for element in results:
                     out.append( "\t".join(["%s" % str(x) for _, x in element.items()]) )
+
+                if len(results) < self.size:
+                    break
+
                 skip += self.size
+
         return out
 
     def geographics(self, of):
