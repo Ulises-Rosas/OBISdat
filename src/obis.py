@@ -59,10 +59,8 @@ class Obis:
         self.size = opts['size']
         ## cases where size does not work
         ## so far
-        self.notsizePath = [
-            'area',
-            'country',
-            'institute'
+        self.afterPaths = [
+            'occurrence'
         ]
 
     @property
@@ -79,29 +77,58 @@ class Obis:
             out.append( mh(opts) )
         return out
 
+    @property
+    def isAfterNeeded(self):
+        regAfterPath = "|".join(["^%s$" % i for i in self.afterPaths])
+
+        return bool(re.findall(regAfterPath, self.path))
+
     def dataRetriever(self):
-        # notsizePath = "|".join([ "^%s$" % i for i in self.notsizePath ])
 
-        page    = 1
+
         headers = self.header
+        afned   = self.isAfterNeeded
         out     = []
+        for n, head in enumerate(headers):
 
-        for head in headers:
-            skip = 0
+            page  = 1
+            skip  = 0
+            after = -1
+            done  = 0
+            total = 0
+
+            print("\n%s. Downloading from %s path" % (n + 1, self.path))
             while True:
-                complete_url = "%s/%s?%s&after=%s" % (self.host, self.path, head, skip)
-                results      = json.load(urllib.request.urlopen(complete_url))['results']
+
+                url = "%s/%s?%s&" % (self.host, self.path, head)
+                if afned:
+                    complete_url = url + "after=%s" % after
+                else:
+                    complete_url = url + "skip=%s"  % skip
+
+                allJson = json.load(urllib.request.urlopen(complete_url))
+                results = allJson['results']
 
                 if len(results) == 0:
                     break
+
                 if page == 1:
+                    total += allJson['total']
                     out.append( "\t".join(["%s" % i for i in results[0].keys()]) )
                     page += 1
+
                 for element in results:
                     out.append( "\t".join(["%s" % str(x) for _, x in element.items()]) )
 
-                if len(results) < self.size:
+                done += len(results)
+
+                print("   %s/%s records handled" % (done, total))
+
+                if done == total:
                     break
+
+                if afned:
+                    after = results[-1]['id']
 
                 skip += self.size
 
@@ -151,6 +178,7 @@ def main():
         'geometry': args.geometry,
         'size': args.size
     }
+    # Obj = Obis({'scientificname': ['Reptilia', 'Mammalia'], 'areaid': '190', 'size': 5000}, 'checklist')
 
     Obj = Obis(query, args.path)
 
