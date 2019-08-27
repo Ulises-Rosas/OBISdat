@@ -53,8 +53,16 @@ class Obis:
 
     def __init__(self, opts, path):
 
+        opts2 = {}
+
+        for k, v in opts.items():
+            if isinstance(v, str):
+                opts2[k] = v.replace(" ", "%20")
+            else:
+                opts2[k] = v
+
         self.host = 'https://api.obis.org/v3'
-        self.opts = opts
+        self.opts = opts2
         self.path = path
         self.size = opts['size']
         ## cases where size does not work
