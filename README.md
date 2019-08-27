@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/204370467.svg)](https://zenodo.org/badge/latestdoi/204370467)
+
 # OBISdat
 
 Features:
