@@ -112,7 +112,7 @@ True	urn:lsid:marinespecies.org:taxname:275528	Anchoa nasus	False	False	275528	1
 True	urn:lsid:marinespecies.org:taxname:275528	Anchoa nasus	False	False	275528	158697	-3.65000009537	Anchoa nasus	True	None	125465	1821	146419	False	HumanObservation	Pisces	None	f8e2bccc-d19e-436f-9f8e-223a6e95de57	Actinopterygii	Clupeiformes	11676	10297	0e1d55f3-c7dc-4355-a81f-e48a96795329	-80.9499969482	275528	Animalia	10194	Chordata	Anchoa nasus	Anchoa	Vertebrata	Engraulidae	2	['310922b4-9d0c-4de1-92d7-9b442d34765b']
 ```
 
-From above examples both would be named equal (i.e. **obis_area.tsv**). For that reason, `--out` option might be handy on these cases. Specific geographic area can be introduced in WKT format by using `--geometry` option. In the following example, we will use coordenates obtained from the [OBIS Mapper](https://mapper.obis.org/?geometry=POLYGON%20((9.6034%201.5839,%209.3501%201.1679,%209.1873%201.4555,%209.3027%201.6134,%209.6034%201.5839))) online app in order to get species occurrence from a tiny area of Guinea Equatorial and Gabon:
+From above examples both would be named equal (i.e. **obis_area.tsv**). For that reason, `--out` option might be handy on these cases. Specific geographic area can be introduced in WKT format by using `--geometry` option. In the following example, we will use coordenates obtained from the [OBIS Mapper](https://mapper.obis.org/?geometry=POLYGON%20((9.6034%201.5839,%209.3501%201.1679,%209.1873%201.4555,%209.3027%201.6134,%209.6034%201.5839))) online app in order to get species occurrence from a tiny area of Equatorial Guinea and Gabon:
 
 
 ```Shell
