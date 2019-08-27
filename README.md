@@ -55,7 +55,7 @@ Each outcome from paths can be modified by adding constraining parameters at `[p
 * `--enddepth`
 * `--geometry`
 
-Only both `--taxa` and `--of` options accept more than one value. While whole output filenames are named in function to the path used, these can also be defined with `--out` option.
+Only both `--taxa` and `--of` options accept more than one value. While whole output filenames are named in function to the path used, these can also be defined with `--out` option. 
 
 #### Examples
 
@@ -81,6 +81,8 @@ id	name	type
 41	Colombia	obis
 127	Joint Regime: Colombia - Jamaica	obis
 ```
+
+Above examples output were named **obis_institute.tsv** and **obis_area.tsv** correspondingly. We can also retrieve data by using any geographical id from above results. On the following example we use Peru's area id (i.e. 190) to look for Reptilia and Mammalia within `checklist/redlist` path:
 
 ```Shell
 obis.py checklist/redlist --areaid 190 --taxa Reptilia Mammalia
