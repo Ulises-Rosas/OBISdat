@@ -82,7 +82,7 @@ id	name	type
 127	Joint Regime: Colombia - Jamaica	obis
 ```
 
-Above examples output were named **obis_institute.tsv** and **obis_area.tsv** correspondingly. We can also retrieve data by using any geographical id from above results. On the following example Peruvian area id is used to look for Reptilia and Mammalia groups within the `checklist/redlist` path:
+Above examples output were named **obis_institute.tsv** and **obis_area.tsv** correspondingly. We can also retrieve data by using any geographical id from above results. On the following example, the Peruvian areaid (i.e. 190) is used to look for two taxa within the `checklist/redlist` path:
 
 ```Shell
 obis.py checklist/redlist --areaid 190 --taxa Reptilia Mammalia
