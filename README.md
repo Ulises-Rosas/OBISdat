@@ -55,20 +55,11 @@ Each outcome from paths can be modified by adding constraining parameters at `[p
 * `--enddepth`
 * `--geometry`
 
-While whole output filenames are named in function to the path used, these can also be defined with `--out` option.
+Only both `--taxa` and `--of` options accept more than one value. While whole output filenames are named in function to the path used, these can also be defined with `--out` option.
 
 #### Examples
 
 When we use either `country`, `institute` or `area` paths, `--of` option is coupled in order to match requested strings:
-
-```Shell
-obis.py country --of Peru Colombia
-```
-```
-id      country code
-169     Peru    PE
-48      Colombia        CO
-```
 
 ```Shell
 obis.py institute --of 'Smithsonian Institution'
@@ -79,8 +70,17 @@ id	name	parent	children	records
 19436	Tennenbaum Marine Observatories Network	{'id': 17611, 'name': 'Smithsonian Institution'}	None	1135
 17611	Smithsonian Institution	None	[{'id': 19436, 'name': 'Tennenbaum Marine Observatories Network'}, {'id': 7553, 'name': 'National Museum of Natural History, Smithsonian Institution'}]	1056
 ```
-
-
+```Shell
+obis.py area --of Peru Colombia
+```
+```
+id	name	type
+190	Peru	obis
+10198	Peru Upwelling Cores	ebsa
+10199	PeruvianHCSUpwelling	ebsa
+41	Colombia	obis
+127	Joint Regime: Colombia - Jamaica	obis
+```
 
 ```Shell
 obis.py checklist/redlist --areaid 190 --taxa Reptilia Mammalia
