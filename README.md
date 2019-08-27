@@ -82,7 +82,7 @@ id	name	type
 127	Joint Regime: Colombia - Jamaica	obis
 ```
 
-Above examples output were named **obis_institute.tsv** and **obis_area.tsv** correspondingly. We can also retrieve data by using any geographical id from above results. On the following example we use Peru's area id (i.e. 190) to look for Reptilia and Mammalia within `checklist/redlist` path:
+Above examples output were named **obis_institute.tsv** and **obis_area.tsv** correspondingly. We can also retrieve data by using any geographical id from above results. On the following example Peruvian area id is used to look for Reptilia and Mammalia groups within the `checklist/redlist` path:
 
 ```Shell
 obis.py checklist/redlist --areaid 190 --taxa Reptilia Mammalia
@@ -97,5 +97,4 @@ Eretmochelys imbricata	(Linnaeus, 1766)	137207	Species	accepted	Eretmochelys imb
 Physeter macrocephalus	Linnaeus, 1758	137119	Species	accepted	Physeter macrocephalus	137119	True	Animalia	Chordata	Vertebrata	Tetrapoda	Mammalia	Theria	Cetartiodactyla	Cetancodonta	Cetacea	Odontoceti	Physeteridae	Physeter	Physeter macrocephalus	2	1821	146419	1831	1837	380416	370511	370545	2688	148723	136985	137032	137119	VU	372
 Balaenoptera musculus	(Linnaeus, 1758)	137090	Species	accepted	Balaenoptera musculus	137090	True	Animalia	Chordata	Vertebrata	Tetrapoda	Mammalia	Theria	Cetartiodactyla	Cetancodonta	Cetacea	Mysticeti	Balaenopteridae	Balaenoptera	Balaenoptera musculus	2	1821	146419	1831	1837	380416	370511	370545	2688	148724	136979	137013	137090	EN	10
 ```
-
 
