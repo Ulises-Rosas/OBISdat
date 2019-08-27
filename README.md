@@ -43,7 +43,7 @@ Paths that [OBIS API](https://api.obis.org) accepts are stated at `[path]` posit
 
 Each outcome from paths can be modified by adding constraining parameters at `[parameters]` position. Paramenters available are:
 
-* `--taxa` (e.g. `Elasmobranchii`)
+* `--taxa` (e.g. `Elasmobranchii Reptilia`)
 * `--of` (e.g. `Peru Colombia`)
 * `--areaid` 
 * `--datasetid`
