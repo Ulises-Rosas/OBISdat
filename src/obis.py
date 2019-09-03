@@ -51,7 +51,10 @@ def getOpt():
 
 class Obis:
 
-    def __init__(self, opts, path):
+    def __init__(self, opts = None, path = None):
+
+        if opts is None:
+            opts = {'scientificname': None,'size': 5000}
 
         opts2 = {}
 
