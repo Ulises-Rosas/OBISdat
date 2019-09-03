@@ -26,7 +26,7 @@ cd OBISdat
 python3 setup.py install
 ```
 
-### Usage
+### Usage within the terminal
 
 The way this executable is used match up with this structure:
 
@@ -129,4 +129,25 @@ date_year	scientificNameID	scientificName	dynamicProperties	superfamilyid	indivi
 2015	urn:lsid:marinespecies.org:taxname:220293	Lepidochelys olivacea	MachineObservation	987094	1	False	[{"crossref":{"citeinfo":{"origin":"Coyne, M. S., and B. J. Godley","pubdate":"2005","title_html":"Satellite Tracking and Analysis Tool (STAT): an integrated sy [...]	220293	1.5	Event	Taxon recorded as "Olive Ridley" by the provider	1821	136999	1328_627560	present	MachineObservation	Tetrapoda	None	2016-09-20 05:56:52	b65e791e-4f51-4d69-8e25-58569844e2af	Testudines	1328_627560	2015-11-26T05:10:58/2015-11-29T14:28:43	1831	2015-11-26 05:10:58/2015-11-29 14:28:43	f282147d-5689-4da7-a8aa-6aa54c5bb5be	9.5	1448755200000	1328	220293	1328_627560	Chelonioidea	148741	http://creativecommons.org/licenses/by-nc/4.0/	1448496000000	152857	2015-11-26T05:10:58/2015-11-29T14:28:43	Lepidochelys	[{"crossref":{"citeinfo":{"origin":"Coyne, M. S., and B. J. Godley","pubdate":"2005","title_html":"Satellite Tracking and Analysis Tool (STAT): an integrated sy [...]	2015-11-26T05:10:58/2015-11-29T14:28:43	(Eschscholtz, 1829)	False	Species	137069	Lepidochelys olivacea	True	None	146419	Olive Ridley	Old Dominion Univ/Univ of Exeter/Wildlife Conservation Society	1448582400000	Identification Type:Telemetry	Reptilia	Cryptodira	WoRMS LSID	2689	Female	Gabon Olive Ridley Tracking Project: Pongara National Park 2015	valid	EPSG:4326 WGS84	Animalia	olivacea	1838	Chordata	Adult	Lepidochelys olivacea	0.001	Tagged animal. organismID may refer to the ID of the telemetry device.	Vertebrata	1328	Telemetry locations aggregated per species per 1-degree cell	Cheloniidae	VU	2	573654c1-4ce7-4ea2-b2f1-e4d42f8f9c31
 2007	urn:lsid:marinespecies.org:taxname:137165	Sterna paradisaea	MachineObservation	2	False	[{"crossref":{"citeinfo":{"origin":"Egevang, C., I.J. Stenhouse, R.A. Phillips, A. Petersen, J.W. Fox and J.R.D. Silk","pubdate":"2010","title_html":"Tracking o [...]	137165	1.5	Event	Taxon recorded as "Arctic tern" by the provider	148764	1821	705_2186	present	MachineObservation	Tetrapoda	None	2011-02-24 13:46:04	d9405451-f8cf-4ee4-9e08-13b84cca5962	Charadriiformes	705_2186	2007-10-11T00:10:00/2007-10-13T12:07:00	1831	2007-10-11 00:10:00/2007-10-13 12:07:00	b7939ba9-6d4c-4359-b92b-136cf591e072	9.5	1192233600000	705	137165	705_2186	http://creativecommons.org/licenses/by-nc/4.0/	1192060800000	ARTE_376;ARTE_395	2007-10-11T00:10:00/2007-10-13T12:07:00	Sterna	Greenland Institute of Natural Resources	[{"crossref":{"citeinfo":{"origin":"Egevang, C., I.J. Stenhouse, R.A. Phillips, A. Petersen, J.W. Fox and J.R.D. Silk","pubdate":"2010","title_html":"Tracking o [...]	2007-10-11T00:10:00/2007-10-13T12:07:00	Pontoppidan, 1763	False	Species	137047	Sterna paradisaea	True	None	146419	Arctic Tern	Greenland Institute of Natural Resources	1192147200000	Identification Type:Telemetry	Aves	WoRMS LSID	2682	Tracking of Arctic tern migrations 2007-2008	valid	EPSG:4326 WGS84	Greenland,high-Arctic,Antarctica,Weddell Sea	Animalia	paradisaea	1836	Chordata	Sterna paradisaea	0.000001	Tagged animal. organismID may refer to the ID of the telemetry device.	Vertebrata	705	Telemetry locations aggregated per species per 1-degree cell	Sternidae	2	573654c1-4ce7-4ea2-b2f1-e4d42f8f9c31
 2012	urn:lsid:marinespecies.org:taxname:137209	Dermochelys coriacea	MachineObservation	987094	4	False	;http://www.seaturtle.org/tracking/index.shtml?project_id=776	137209	1.5	Event	Taxon recorded as "Leatherback" by the provider	1821	137000	1836_393151	present	MachineObservation	Tetrapoda	None	2018-06-13 14:36:11	f3ee062e-2671-4d32-a813-acd517c8dcc8	Testudines	1836_393151	2012-11-03T08:40:01/2012-12-25T18:02:31	1831	2012-11-03 08:40:01/2012-12-25 18:02:31	768d9e0b-a4d8-4e02-8c50-74f0adf4cf52	9.5	1356393600000	1836	137209	1836_393151	Chelonioidea	148741	http://creativecommons.org/licenses/by-nc/4.0/	1351900800000	122426a;122428a;122433a;122434a	2012-11-03T08:40:01/2012-12-25T18:02:31	Dermochelys	Halpin, P.N., A.J. Read, E. Fujioka, B.D. Best, B. Donnelly, L.J. Hazen, C. Kot, K. Urian, E. LaBrecque, A. Dimatteo, J. Cleary, C. Good, L.B. Crowder, and K.D. [...]	2012-11-03T08:40:01/2012-12-25T18:02:31	(Vandelli, 1761)	False	Species	137070	Dermochelys coriacea	True	None	146419	Leatherback	University of Exeter	1354147200000	Identification Type:Telemetry	Reptilia	Cryptodira	WoRMS LSID	2689	Female	Gabon 2012: Pongara, Leatherback Turtles	valid	EPSG:4326 WGS84	Animalia	coriacea	1838	Chordata	Adult	Dermochelys coriacea	0.001	Tagged animal. organismID may refer to the ID of the telemetry device.	Vertebrata	1836	Telemetry locations aggregated per species per 1-degree cell	Dermochelyidae	VU	2	573654c1-4ce7-4ea2-b2f1-e4d42f8f9c31
+```
+
+### Usage within python3
+
+The way it is used inside python3 is pretty the same from the console:
+```python3
+# import class
+from OBISdat.obis import Obis
+
+# set parameters as a dict
+query =  { 
+    'scientificname': ['Reptilia', 'Mammalia'],
+    'areaid': '190',
+    'size': 5000
+}
+
+# get results in a list
+Obis(path =  'checklist', opts = query).dataRetriever()
+
+# get results from paths such as country, area or institute
+Obis(path =  'area').geographics(of = ['Peru'])
 ```
