@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/204370467.svg)](https://zenodo.org/badge/latestdoi/204370467)
+
 # OBISdat
 
 Features:
@@ -16,7 +18,7 @@ Upon downloading this repository, unzip it and move into `OBISdat` directory, th
 python3 setup.py install
 ```
 
-Using `git`:
+Using `git` (optional):
 
 ```Shell
 git clone https://github.com/Ulises-Rosas/OBISdat.git
