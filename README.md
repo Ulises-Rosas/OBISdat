@@ -12,18 +12,10 @@ Software requierements:
 
 #### Installation
 
-Upon downloading this repository, unzip it and move into `OBISdat` directory, then run the following to install excutables:
+By using `pip`:
 
 ```Shell
-python3 setup.py install
-```
-
-Using `git` (optional):
-
-```Shell
-git clone https://github.com/Ulises-Rosas/OBISdat.git
-cd OBISdat
-python3 setup.py install
+pip install OBISdat
 ```
 
 ### Usage
