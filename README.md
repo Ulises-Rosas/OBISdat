@@ -18,6 +18,14 @@ By using `pip`:
 pip install OBISdat
 ```
 
+Using `git` (Optional):
+
+```Shell
+git clone https://github.com/Ulises-Rosas/OBISdat.git
+cd OBISdat
+python3 setup.py install
+```
+
 ### Usage within the terminal
 
 The way this executable is used match up with this structure:
