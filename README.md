@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/204370467.svg)](https://zenodo.org/badge/latestdoi/204370467)
 [![pypi](https://img.shields.io/pypi/v/OBISdat.svg)](https://pypi.python.org/pypi/OBISdat)
-[![python](https://img.shields.io/pypi/pyversions/OBISdat.svg)](https://pypi.python.org/pypi/OBISdat)
+[![](https://anaconda.org/urosas/obisdat/badges/installer/conda.svg)](https://anaconda.org/urosas/obisdat/badges/installer/conda.svg)
 
 # OBISdat
 
