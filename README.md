@@ -136,7 +136,7 @@ date_year	scientificNameID	scientificName	dynamicProperties	superfamilyid	indivi
 The way it is used inside python3 is pretty the same from the console:
 ```python3
 # import class
-from OBISdat.obis import Obis
+from OBISdat.core_obis import Obis
 
 # set parameters as a dict
 query =  { 

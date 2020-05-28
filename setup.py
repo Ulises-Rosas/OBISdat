@@ -8,7 +8,7 @@ with open('README.md') as readme_file:
 
 
 setup(name="OBISdat",
-      version='1.1',
+      version='1.3',
       long_description = readme,
       long_description_content_type='text/markdown',
       author='Ulises Rosas',
@@ -16,7 +16,11 @@ setup(name="OBISdat",
       url='https://github.com/Ulises-Rosas/OBISdat',
       packages = ['OBISdat'],
       package_dir = {'OBISdat': 'src'},
-      scripts = ['src/obis.py'],
+      entry_points = {
+           'console_scripts': [
+                 'obis = OBISdat.obis:main'
+            ]
+      },
       classifiers=[
              'Programming Language :: Python :: 3',
              'License :: OSI Approved :: MIT License'
